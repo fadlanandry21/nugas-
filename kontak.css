@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+/* Nav */
+.navbar {
+  background-color: #92b6b1;
+}
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  padding: 45px;
+  position: relative;
+}
+.nav-item a {
+  color: #3d7b73;
+  font-size: 18.5px;
+  font-weight: 600;
+}
+
+.navbar-brand img {
+  width: 11rem;
+}
+
+.nav-item a:hover {
+  color: #ffff;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ffff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.nav-link :hover {
+  color: #ffff;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  margin-bottom: 40px;
+}
+
+.dropdown-menu li a:hover {
+  color: black;
+}
+/* Kontak */
+.contactus {
+  position: relative;
+  width: 100%;
+  padding: 40px 100px;
+  margin-top: 2%;
+}
+.contactus .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.contactus .title h2 {
+  font-weight: 600;
+  font-size: 36px;
+}
+.line1 {
+  width: 150px;
+  height: 5px;
+  border: 4px solid #92b6b1;
+  position: absolute;
+  margin-top: 5%;
+}
+
+.form {
+  grid-area: form;
+}
+.info {
+  grid-area: info;
+}
+.map {
+  grid-area: map;
+}
+.contact {
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 5px 35px rgb(0, 0, 0, 0.15);
+}
+.contact h3 {
+  color: #000;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+.box {
+  margin-top: 4em;
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas:
+    "form info"
+    "form map";
+  grid-gap: 20px;
+}
+
+/* Form */
+.formbox {
+  position: relative;
+  width: 100%;
+}
+.formbox .row50 {
+  display: flex;
+  gap: 20px;
+}
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.formbox .row100 .inputbox {
+  width: 100%;
+}
+.inputbox span {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.inputbox input {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+}
+.inputbox textarea {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  resize: none;
+  min-height: 210px;
+  margin-bottom: 2px;
+}
+.inputbox input[type="submit"] {
+  border: solid;
+  background: #3d7b73;
+  color: #fff;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+
+/* InfoBox */
+.info {
+  background: #3d7b73;
+}
+.info h3 {
+  color: #fff;
+}
+.info .infobox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.info .infobox div span {
+  min-width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #739e98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.info .infobox div p {
+  color: #fff;
+  font-size: 1.1em;
+}
+.info .infobox div a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.sci {
+  margin-top: 40px;
+  display: flex;
+}
+.sci li {
+  list-style: none;
+  margin-right: 25px;
+}
+.sci li a {
+  color: #fff;
+  font-size: 2em;
+  color: #ccc;
+}
+.sci li a:hover {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.map {
+  padding: 0;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
