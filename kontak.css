@@ -11,9 +11,6 @@ body {
   overflow-x: hidden;
 }
 /* Nav */
-.navbar {
-  background-color: #92b6b1;
-}
 .navbar-nav {
   list-style: none;
   display: flex;
@@ -58,6 +55,10 @@ body {
   margin-bottom: 40px;
 }
 
+.nav-item .active {
+  color: #fff;
+}
+
 .nav-link :hover {
   color: #ffff;
 }
@@ -68,10 +69,8 @@ body {
   margin-bottom: 40px;
 }
 
-.dropdown-menu li a:hover {
-  color: black;
-}
 /* Kontak */
+
 .contactus {
   position: relative;
   width: 100%;

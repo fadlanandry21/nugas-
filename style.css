@@ -60,6 +60,10 @@ body {
   margin-bottom: 40px;
 }
 
+.nav-item .active {
+  color: #fff;
+}
+
 .nav-link :hover {
   color: #ffff;
 }
@@ -68,10 +72,6 @@ body {
   transform: scaleX(1);
   transform-origin: left;
   margin-bottom: 40px;
-}
-
-.dropdown-menu li a:hover {
-  color: black;
 }
 
 /* Konten */
@@ -99,8 +99,10 @@ body {
   font-style: italic;
   color: #739e98;
 }
-.btn-buy {
+.btn-jelajah {
   margin-top: 10px;
+  animation: ease-in;
+  transition: all 3s;
 }
 #btn {
   text-decoration: none;
@@ -162,6 +164,38 @@ body {
   font-weight: 800;
   color: #208b7c;
   letter-spacing: 2px;
+}
+
+/* Produk */
+.search-container {
+  position: relative;
+  width: 300px;
+}
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  padding-right: 50px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.search-icon:hover {
+  color: #3d7b73;
 }
 
 /* footer */
